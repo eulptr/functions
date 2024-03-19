@@ -24,8 +24,7 @@ public class Main {
         System.out.println(random(e,f));
 
         System.out.println("<6 uzduotis>");
-        int [] randArr = randArr ();
-        printArr(randArr);
+        System.out.println(Arr(5, 10, 15));
 
     }
 
@@ -55,12 +54,12 @@ public class Main {
         return (int) (e + Math.random() * (f-e)); //5 uzduotis
     }
 
-public static int randomArr (int min, int max, int length) {
-        int [] randArray;
+public static int[] Arr (int min, int max, int length) {
+        int [] array = new int[length];
     for (int g = 0; g < length; g++) {
-        randomArr[g] = min - (Math.random()) * (max - min);
-
+        array [g] = min - (int)Math.round(Math.random()) * (max - min);
     }
+    return array;
 }
 
 
